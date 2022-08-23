@@ -1,0 +1,14 @@
+// Hamza Mufti                      08/19/22
+// helloworld.java
+// this is my very first java program
+
+public class HelloWorld
+{
+  // prints my name
+  // red = runtime error
+  public static void main (String[] args)
+  {
+    System.out.println("Hello World, from Hamza");
+    System.out.println("everyone's bff");
+  }
+}

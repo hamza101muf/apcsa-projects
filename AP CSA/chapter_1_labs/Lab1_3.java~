@@ -1,0 +1,16 @@
+/*
+// Hamza mufti
+// 08/23/2022
+// 2nd program, basic outputs for names, movie, etc (fav movie is NOT a MARVEL movie)
+*/
+public class Lab1_3
+{
+  public static void main (String[], args)
+  {
+    System.out.println("Favorite Movie: The Wizard of Oz");
+    System.out.println("Name: Hamza");
+    System.out.println("Hobbies: Fishing with turtles, eating food, breathing");
+    System.out.println("Favorite Book: The Tapestry");
+    System.out.println("Favorite Movie: The Wizard of Oz");
+  }
+}
