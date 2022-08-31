@@ -1,0 +1,29 @@
+/*
+ * 
+ * Hamza Mufti
+ * 08/26/2022
+ * 2.3 - application that reads to floating numbers and prints sum, difference, and product
+*/
+import java.util.Scanner;
+
+public class lab2_3
+{
+  public static void main (String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    
+    double num1, num2;
+    System.out.println("Please enter a decimal number: ");
+    scan.nextDouble();
+    System.out.println("Please enter a decimal number: ");
+    scan.nextDouble();
+    
+    double sum, prod, diff;
+    sum = num1 + num2;
+    prod = num1*num2;
+    diff = static doubl
+    
+    System.out.println(" Here's the sum of those numbers: ");
+  }
+}
+    

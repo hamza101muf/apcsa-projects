@@ -1,0 +1,16 @@
+/*
+ * 
+ * Hamza Mufti
+ * 08/26/22
+ * 2.2 - application that reads 3 numbers and prints their average
+*/
+
+pubic class Lab2_2
+{
+  public static void main (String[] args)
+  {
+    int num0, num1, num2;
+    int sum = num0+num1+num2;
+    double avg = sum/3.0;
+  }
+}

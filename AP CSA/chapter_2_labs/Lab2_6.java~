@@ -1,0 +1,29 @@
+/*
+ * Hamza Mufti (Mr. Hatcher's bfffff)
+ * 08/29/22
+ * 2.6 - application that converts a number of seconds into hours minutes and seconds
+ */
+import java.util.Scanner;
+
+public class Lab2_6
+{
+  public static void main (String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    
+    int raw_time, hours, minutes, seconds;
+    
+    System.out.println("Hi, please input a time value in SECONDS, in order to get" + 
+                       " how much that is in hours, minutes, and seconds");
+    raw_time = scan.nextInt();
+    
+    hours = raw_time/3600;
+    minutes = (raw_time % 3600)/60;
+    
+    System.out.println("There are " + hours + " hours in " + minutes + " minutes "  + raw_time + " seconds");
+    
+      
+  }
+}
+    
+   

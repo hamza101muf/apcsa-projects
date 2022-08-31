@@ -1,0 +1,30 @@
+/*
+ * 
+ * Hamza Mufti
+ * 08/25/2022
+ * Application that displays initials
+*/
+
+public class Lab1_6
+{
+  public static void main (String[] args)
+  {
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMMM                     MMMM");
+    System.out.println("HHHHH             HHHH    MMMMMM                  MMMMMM");
+    System.out.println("HHHHH             HHHH    MMMMMMM               MMMMMMMM");
+    System.out.println("HHHHH             HHHH    MMMM MMM            MMM    MMM");
+    System.out.println("HHHHH             HHHH    MMMM  MMMM        MMM      MMM");
+    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM    MMM     MMM        MMM");
+    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM      MMM  MMM         MMM");
+    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM        MMM            MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    System.out.println("HHHHH             HHHH    MMMM                       MMM");
+    
+  }
+}
