@@ -10,7 +10,8 @@ public class  Lab2_5
 {
   public static void main (String[] args)
   {
-    Scanner scan = new Scanner(System.in);
+    try(Scanner scan = new Scanner(System.in))
+    {
     
     double convChoice;
     double miles, kilometers;
@@ -31,6 +32,7 @@ public class  Lab2_5
     else {
       System.out.println("Sorry, it looks like you didn't input an accepted value, please try again");
     }
+  }
   }
 }
       

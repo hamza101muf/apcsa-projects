@@ -9,8 +9,8 @@ public class  Lab2_4
 {
   public static void main (String[] args)
   {
-    Scanner scan = new Scanner(System.in);
-    
+    try(Scanner scan = new Scanner(System.in))
+    {    
     double convChoice;
     double tempC, tempF;
     System.out.println("Hi, would you like to \n Convert from Celsius to Farenheit (press '1') " 
@@ -31,6 +31,7 @@ public class  Lab2_4
     else {
       System.out.println("Sorry, it looks like you didn't input an accepted value, please try again");
     }
+  }
   }
 }
       

@@ -12,8 +12,8 @@ public class Lab2_6
 {
   public static void main (String[] args)
   {
-    Scanner scan = new Scanner(System.in);
-    
+    try(Scanner scan = new Scanner(System.in))
+    {
     int raw_time, hours, minutes, seconds;
     
     System.out.println("5Hi, please input a time value in SECONDS, in order to get" + 
@@ -27,7 +27,7 @@ public class Lab2_6
     System.out.println("There are " + hours + " hours " + minutes + " minutes " + seconds + " seconds in "
                          + raw_time + " seconds");
     
-      
+    }
   }
 }
     

@@ -11,8 +11,8 @@ public class lab2_3
 {
   public static void main (String[] args)
   {
-    Scanner scan = new Scanner(System.in);
-    
+    try(Scanner scan = new Scanner(System.in))
+    {    
     double num1, num2;
     double sum, prod, diff;
     System.out.println("Please enter a decimal number: ");
@@ -29,6 +29,7 @@ public class lab2_3
     System.out.println(" Here's the product of those numbers: " + prod);
     System.out.println(" Here's the difference between those numbers: " + Math.abs(diff));
     
-  }
+    }
+} 
 }
     

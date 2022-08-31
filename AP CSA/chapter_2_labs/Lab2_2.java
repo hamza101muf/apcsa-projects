@@ -10,7 +10,8 @@ public class Lab2_2
 {
   public static void main (String[] args)
   {
-    Scanner scan = new Scanner(System.in);
+    try(Scanner scan = new Scanner(System.in))
+    {
     
     //collects numbers
     double num0, num1, num2;
@@ -27,5 +28,6 @@ public class Lab2_2
     
     //displays result
     System.out.println("Here's the average of those 3 numbers: " + avg);
+    }
   }
 }
