@@ -1,0 +1,15 @@
+/*
+ * Hamza Mufti
+ * 08/31/22
+ * 2.10 - side lengths reader to find the area of a triangle)
+ */
+
+
+public class Lab2_10
+{
+  public static void main (String[] args)
+  {
+    
+    
+  }
+}

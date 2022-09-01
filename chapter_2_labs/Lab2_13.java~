@@ -1,0 +1,16 @@
+/* 
+ * Hamza Mufti
+ * 08/31/22
+ * 2.13 - random phone number generator (first 3 can't have 8 or 9), second set can't have value greater than 742
+ */
+
+import java.util.Scanner, java.util.Random;
+
+public class Lab2_13
+{
+  public static void main (String[] args)
+  {
+    
+    
+  }
+}
