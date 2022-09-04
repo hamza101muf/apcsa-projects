@@ -11,12 +11,12 @@ public class Lab1_5
     System.out.println("    *");
     System.out.println("   ***");
     System.out.println("  *****");
+    System.out.println(" *******");
+    System.out.println("*********");
+    System.out.println(" *******");
+    System.out.println("  *****");
     System.out.println("   ***");
     System.out.println("    *");
-  
-  
-  
-  
-  
+
   }
 }

@@ -14,24 +14,27 @@ public class Lab2_12
     int pennies, nickels, dimes, quarters;
     double money;
     
-    Scanner scan = new Scanner(System.in);
-    NumberFormat fmt = NumberFormat.getCurrencyInstance();
-    
-    System.out.println("Please input the number of pennies you have: ");
-    pennies = scan.nextInt();
-    
-    System.out.println("Please input the number of nickels you have: ");
-    nickels = scan.nextInt();
-    
-    System.out.println("Please input the number of dimes you have: ");
-    dimes = scan.nextInt();
-    
-    System.out.println("Please input the number of quarters you have: ");
-    quarters = scan.nextInt();
-    
-    money = (pennies*.01) + (nickels*.05) + (dimes*.10) + (quarters*.25);
-    
-    System.out.println("Here's how much money you have: " + fmt.format(money));
+    try (Scanner scan = new Scanner(System.in)) {
+      NumberFormat fmt = NumberFormat.getCurrencyInstance();
+      
+      System.out.println("Please input the number of pennies you have: ");
+      pennies = scan.nextInt();
+      
+      System.out.println("Please input the number of nickels you have: ");
+      nickels = scan.nextInt();
+      
+      System.out.println("Please input the number of dimes you have: ");
+      dimes = scan.nextInt();
+      
+      System.out.println("Please input the number of quarters you have: ");
+      quarters = scan.nextInt();
+      
+      money = (pennies*.01) + (nickels*.05) + (dimes*.10) + (quarters*.25);
+      
+      System.out.println("Here's how much money " + quarters + " quarters, " 
+      + dimes + " dimes, " + nickels + " nickels, and " + pennies + " pennies is equal to: " +
+       fmt.format(money));
+    }
   }
 }
     

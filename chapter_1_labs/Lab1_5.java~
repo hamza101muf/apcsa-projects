@@ -8,4 +8,15 @@ public class Lab1_5
 {
   public static void main (String[] args)
   { 
-    System.out.println("\t\t\t * \n \t\t ** \n \t *** \n **** \n \t *** \n \t\t **\n \t\t\t *");
+    System.out.println("    *");
+    System.out.println("   ***");
+    System.out.println("  *****");
+    System.out.println("   ***");
+    System.out.println("    *");
+  
+  
+  
+  
+  
+  }
+}

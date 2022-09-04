@@ -15,8 +15,8 @@ public class Lab1_6
     System.out.println("HHHHH             HHHH    MMMM MMM            MMM    MMM");
     System.out.println("HHHHH             HHHH    MMMM  MMMM        MMM      MMM");
     System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM    MMM     MMM        MMM");
-    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM      MMM  MMM         MMM");
-    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM        MMM            MMM");
+    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM      MMMMMMMM         MMM");
+    System.out.println("HHHHHHHHHHHHHHHHHHHHHH    MMMM        MMMM           MMM");
     System.out.println("HHHHH             HHHH    MMMM                       MMM");
     System.out.println("HHHHH             HHHH    MMMM                       MMM");
     System.out.println("HHHHH             HHHH    MMMM                       MMM");

@@ -24,7 +24,7 @@ public class Lab2_7
       
       raw_time = (3600*hours + 60*minutes + seconds);
       
-      System.out.println("There are " + raw_time + " seconds in " + hours + " hours " + minutes + " minutes " + seconds + " seconds");
+      System.out.println("There are " + raw_time + " seconds in " + hours + " hours " + minutes + " minutes and " + seconds + " seconds");
     }
       
   }

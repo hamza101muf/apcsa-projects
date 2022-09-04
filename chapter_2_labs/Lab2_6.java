@@ -4,8 +4,6 @@
  * 2.6 - application that converts a number of seconds into hours minutes and seconds; accuracy within +/- 1 second of
  * the actual time
  */
-
-
 import java.util.Scanner;
 
 public class Lab2_6
@@ -16,7 +14,7 @@ public class Lab2_6
     {
     int raw_time, hours, minutes, seconds;
     
-    System.out.println("5Hi, please input a time value in SECONDS, in order to get" + 
+    System.out.println("Hi, please input a time value in SECONDS, in order to get" + 
                        " how much that is in hours, minutes, and seconds");
     raw_time = scan.nextInt();
     

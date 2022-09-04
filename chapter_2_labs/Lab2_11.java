@@ -14,21 +14,23 @@ public class Lab2_11
     int od1, od2;
     double totGas, mpg;
     
-    Scanner scan = new Scanner(System.in);
-    DecimalFormat fmt = new DecimalFormat ("0.##");
-    
-    System.out.println("Hi, please input the STARTING ODOMETER reading below: ");
-    od1 = scan.nextInt();
-    
-    System.out.println("Please input the FINAL ODOMETER rating below:");
-    od2 = scan.nextInt();
-    
-    System.out.println("Please input the TOTAL GAS USED below:");
-    totGas = scan.nextDouble();
-    
-    mpg = (od2-od1)/totGas;
-    
-    System.out.println("Here's the miles/gallong for your trip " + fmt.format(mpg) + " mpg");
+    try (Scanner scan = new Scanner(System.in)) {
+      DecimalFormat fmt = new DecimalFormat ("0.##");
+      
+      System.out.println("Hi, please input the STARTING ODOMETER reading below: ");
+      od1 = scan.nextInt();
+      
+      System.out.println("Please input the FINAL ODOMETER rating below:");
+      od2 = scan.nextInt();
+      
+      System.out.println("Please input the TOTAL GAS USED below:");
+      totGas = scan.nextDouble();
+      
+      mpg = (od2-od1)/totGas;
+      
+      System.out.println("Here's the miles per gallon for your trip where you travelled " 
+      + (od2-od1) + " miles and used " + totGas + " gallons of gas: "+ fmt.format(mpg) + " mpg");
+    }
   }
 }
     
