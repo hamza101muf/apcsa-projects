@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class  Lab2_4
+public class Lab2_4
 {
   public static void main (String[] args)
   {
