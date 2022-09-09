@@ -1,8 +1,8 @@
 /*
- * Hamza Mufti (Mr. Hatcher's bfffff)
+ * Hamza Mufti
  * 08/29/22
- * 2.6 - application that converts a number of seconds into hours minutes and seconds; accuracy within +/- 1 second of
- * the actual time
+ * 2.7 - creating a reverse function of the previous seconds to HH:MM:SS format
+ * (dedicated to all my bffs out there :)
  */
 import java.util.Scanner;
 
@@ -10,23 +10,24 @@ public class Lab2_6
 {
   public static void main (String[] args)
   {
-    try(Scanner scan = new Scanner(System.in))
+    try (Scanner scan = new Scanner(System.in)) 
+    // try keyword is meant to catch any errors that may occur in the program
     {
-    int raw_time, hours, minutes, seconds;
-    
-    System.out.println("Hi, please input a time value in SECONDS, in order to get" + 
-                       " how much that is in hours, minutes, and seconds");
-    raw_time = scan.nextInt();
-    
-    hours = raw_time/3600;
-    minutes = (raw_time-(hours*3600))/60;
-    seconds = (raw_time-(minutes*60 + hours*3600));
-    
-    System.out.println("There are " + hours + " hours " + minutes + " minutes " + seconds + " seconds in "
-                         + raw_time + " seconds");
-    
+      int raw_time, hours, minutes, seconds;
+      
+      System.out.println("Hi, please input a time value in HOURS: ");
+      hours = scan.nextInt();
+      System.out.println("Thanks please input a time value in MINUTES: ");
+      minutes = scan.nextInt();
+      System.out.println("Thanks please input a time value in SECONDS: ");
+      seconds = scan.nextInt();
+      
+      raw_time = (3600*hours + 60*minutes + seconds);
+      
+      System.out.println("There are " + raw_time + " seconds in " + hours + " hours " + minutes + " minutes " 
+                           + seconds + " seconds");
     }
+      
   }
 }
-    
    

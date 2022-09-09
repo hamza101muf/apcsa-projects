@@ -18,7 +18,8 @@ public class  Lab2_5
     double convChoice;
     double miles, kilometers;
 
-    System.out.println("Hi, would you like to \n Convert from MILES to KILOMETERS (press '1') \n Convert from KILOMETERS to MILES (press '2') ");
+    System.out.println("Hi, would you like to \n Convert from MILES to KILOMETERS (press '1') \n Convert" 
+                         + " from KILOMETERS to MILES (press '2') ");
     convChoice = scan.nextInt();
     if (convChoice == 1) {
       System.out.println("OK, please input the MILES value you would like to input: ");

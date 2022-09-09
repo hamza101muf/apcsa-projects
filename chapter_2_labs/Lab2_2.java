@@ -12,7 +12,7 @@ public class Lab2_2
   {
     try(Scanner scan = new Scanner(System.in))
     {
-    DecimalFormat fmt = new DecimalFormat("0.###");
+    DecimalFormat fmt = new DecimalFormat("0.##");
       
     //collects numbers
     double num0, num1, num2;
@@ -28,7 +28,8 @@ public class Lab2_2
     double avg = sum/3.0;
     
     //displays result
-    System.out.println("Here's the average of " + num0 + ", " + num1 + ", " + num2 + ": ------ " + fmt.format(avg)+" ------");
+    System.out.println("Here's the average of " + num0 + ", " + num1 + ", " + num2 + ": ------ " +
+                       fmt.format(avg)+" ------");
     }
   }
 }
