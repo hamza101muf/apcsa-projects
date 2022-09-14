@@ -31,8 +31,6 @@ public class Lab2_10
       System.out.println("The area of your triangle (with side lengths: " 
       + s1 + ", " + s2 + ", " + s3 + ") is " + fmt.format(area) + " units squared");
     }
-    
-    
-    
+
   }
 }
