@@ -1,0 +1,42 @@
+/*
+ * Hamza Mufti
+ * Ideal Weight Program - calculates the ideal weight based on height
+ * 9/15/2022
+ */
+import  java.util.Scanner;
+import java.text.DecimalFormat;
+
+import java.util.Scanner;
+
+public class IdealHeight
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    DecimalFormat fmt = new DecimalFormat("0.##");
+    
+    int weightF, weightM, heightFt, heightIn;
+    
+    System.out.println("Please input your height in feet (ex. if you are 5'6\" then input \'5\': ");
+    heightFt = scan.nextInt();
+    
+    System.out.println("Thanks, now input the height in inches (if you are 5'6\" then input \'6\'");
+    heightIn = scan.nextInt();
+    
+    weightF = 100 + 5*((heightFt*12+heightIn)%60);
+    weightM = 106 + 6*((heightFt*12+heightIn)%60);
+    
+    System.out.println("If you are a MALE, then your ideal weight for a height of " + heightFt + "\'" 
+                         + heightIn + "\"" + " is " + weightM + "lbs");
+    System.out.println("If you are a MALE, then your ideal weight for a height of " + heightFt + "\'" 
+                         + heightIn + "\"" + " is " + weightF + "lbs");
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+}
