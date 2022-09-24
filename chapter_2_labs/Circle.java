@@ -10,8 +10,8 @@ public class Circle
 {
     public static void main(String[] args)
     {
-       try (Scanner scan = new Scanner(System.in)) {
-        DecimalFormat fmt = new DecimalFormat("0.##");
+           Scanner scan = new Scanner(System.in); 
+           DecimalFormat fmt = new DecimalFormat("0.##");
           
            final double PI = 3.14159;
          
@@ -46,6 +46,7 @@ public class Circle
                                 + ", area " + fmt.format(area1) + ", and circumference " + fmt.format(circum1) 
                                 + ", IS \n " + aScaleFactor
                                 + " for the area \n " + cScaleFactor + " for the circumference");
+           scan.close();
     }
     }
-}
+

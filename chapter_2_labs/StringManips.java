@@ -18,7 +18,7 @@ import java.util.Scanner;
        String firstHalf;   // first half of the phrase String
        String secondHalf;  // second half of the phrase String
        String switchedPhrase; //a new phrase w/ orig halves switched
-       String middle3 = phrase.substring(9,12);
+       String middle3 = phrase.substring(10,13);
        
        System.out.println("What city do you live in: \n");
        String city = new String(scan.next());
@@ -32,7 +32,7 @@ import java.util.Scanner;
        
        // get the substring for each half of the phrase
        firstHalf = phrase.substring(0,middleIndex);
-       secondHalf = phrase.substring(middleIndex, phraseLength);
+       secondHalf = phrase.substring(middleIndex);
        
        // concatenate the firstHalf at the end of the secondHalf
        switchedPhrase = secondHalf.concat(firstHalf);
@@ -51,5 +51,7 @@ import java.util.Scanner;
        System.out.println(state.toUpperCase()+city.toLowerCase()+state.toUpperCase());
        
        System.out.println();
+       
+       scan.close();
      }
  }
