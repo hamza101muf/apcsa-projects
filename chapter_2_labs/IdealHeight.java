@@ -15,6 +15,9 @@ public class IdealHeight
     
     int weightF, weightM, heightFt, heightIn;
     double lowRangeF, highRangeF, lowRangeM, highRangeM;
+    boolean programRun = true;
+
+    while (programRun == true) {
     
     System.out.println("Please input your height in feet (ex. if you are 5'6\" then input \'5\'): ");
     heightFt = scan.nextInt();
@@ -37,6 +40,11 @@ public class IdealHeight
     System.out.println("If you are a MALE, then your ideal weight would be " + weightM + "lbs for a height of " 
                          + heightFt + "\'" + heightIn + "\"" + " with a range of " + fmt.format(lowRangeM) 
                          + " - " + fmt.format(highRangeM) + "lbs");
+
+    System.out.println("Would you like to find another idea weight\n\t \'true\' for yes \n\t \'false\' for no");
+                         programRun = scan.nextBoolean();
+
+    }
     
     scan.close();
   }

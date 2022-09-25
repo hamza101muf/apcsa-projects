@@ -13,9 +13,12 @@ public class Paint {
             final int COVERAGE = 350; // paint covers 350 sq ft/gal
             int length, width, height, doors, windows;
             double totalSqft, paintNeeded;
+            boolean programRun = true;
 
             Scanner scan = new Scanner(System.in);
             DecimalFormat fmt = new DecimalFormat("0.##");
+
+            while (programRun == true){
 
             // Prompt for and read in the length of the room
             System.out.println("Please enter the length of your room\n");
@@ -47,6 +50,12 @@ public class Paint {
                     width + ", and height " + height + ", but you have " + doors
                     + " doors and " + windows + " windows, so you will only need "
                     + fmt.format(paintNeeded) + " gallons of paint.");
+            System.out.println("Would you like to convert another number\n\t \'true\' for yes \n\t \'false\' for no");
+                    programRun = scan.nextBoolean();
+                }
+
+
+            scan.close();
 
         }
 }
