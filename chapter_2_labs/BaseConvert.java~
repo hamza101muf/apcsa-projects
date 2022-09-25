@@ -23,7 +23,7 @@ public class BaseConvert
       int place3;      // digit in the base^3 place
 
       String baseBNum = new String (""); // the number in the new base
- Scanner scan = new Scanner(System.in);
+      Scanner scan = new Scanner(System.in);
 
       // read in the base 10 number and the base
       System.out.println();
@@ -35,14 +35,20 @@ public class BaseConvert
       // Compute the maximum base 10 number that will fit in 4 digits 
       // in the new base and tell the user what range the number they
       // want to convert must be in
+      maxNumber = (int)Math.pow(base, 4)-1;
+      System.out.println("The max value you can convert with base " + base + " is " + maxNumber); 
+      
 
       System.out.print ("Please enter a base 10 number to convert: ");
       base10Num = scan.nextInt();
     
 
       // Do the conversion (see notes in lab)
+      
 
-      // Print the result (see notes in lab)
+      // Print the result (see notes in lab)\
+      
+      
 
     }
 }
