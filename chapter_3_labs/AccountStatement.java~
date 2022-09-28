@@ -1,0 +1,33 @@
+/*
+ * Hamza Mufti
+ * Calculates he monthly charge amount and balance of a customer credit card
+ * 9/26/22
+ */
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class AccountStatement { 
+  public static void main(String[] args) {
+  
+    Scanner scan = new Scanner(System.in);
+    DecimalFormat fmt = new DecimalFormat("0.##");
+    
+    double prev_bal, add_charges, interest, min_payment, new_bal;
+    
+    System.out.println("      Balance Sheet\n\nPlease input the previous balance for the month "
+                      + "example: if you owed $30, then enter \'30\'");
+    prev_bal = scan.nextDouble();
+    
+    System.out.println("Thanks, now input the amount of additional charges for the month");
+    add_charges = scan.nextDouble();
+    
+    if prev_bal == 0 {
+      interest = 0;
+      new_bal = add_charges;
+    }
+    else if prev_bal > 0 {
+      interest = 1.02;
+      new_bal = (prev_bal + add_charges)*interest;
+    
+  }
+}
