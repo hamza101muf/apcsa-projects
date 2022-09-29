@@ -38,11 +38,11 @@ public class Salary {
     
 // Compute the raise using if ...
     
-    if (rating.equalsIgnoreCase("Excellent") == true) 
+    if (rating.equalsIgnoreCase("Excellent")) 
       raise = 0.06*currentSalary;
-    else if (rating.equalsIgnoreCase("Good") == true)
+    else if (rating.equalsIgnoreCase("Good"))
       raise = 0.04*currentSalary;
-    else if (rating.equalsIgnoreCase("Poor") == true)
+    else if (rating.equalsIgnoreCase("Poor"))
       raise = 0.015*currentSalary;
     else 
       System.out.println("Invalid rating, please try again");// if the user input an invalid rating, the raise is set to 0
