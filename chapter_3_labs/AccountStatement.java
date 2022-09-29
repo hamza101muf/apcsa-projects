@@ -42,6 +42,9 @@ public class AccountStatement {
     System.out.println("Interest: " + fmt.format(interest));
     System.out.println("===========================\nNew Balance: " + fmt.format(new_bal));
     System.out.println("Minimum Payment: " + fmt.format(min_payment));
+
+    scan.close();
+  
     
   }
 }

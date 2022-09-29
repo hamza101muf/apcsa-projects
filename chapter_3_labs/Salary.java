@@ -20,7 +20,7 @@ public class Salary {
 
     double currentSalary; // employee's current salary
     
-    double raise; // amount of the raise
+    double raise = 0; // amount of the raise
     
     double newSalary; // new salary for the employee
     
@@ -42,9 +42,10 @@ public class Salary {
       raise = 0.06*currentSalary;
     else if (rating.equalsIgnoreCase("Good") == true)
       raise = 0.04*currentSalary;
-    else
+    else if (rating.equalsIgnoreCase("Poor") == true)
       raise = 0.015*currentSalary;
-    
+    else 
+      System.out.println("Invalid rating, please try again");// if the user input an invalid rating, the raise is set to 0
     newSalary = currentSalary + raise;
     
 // Print the results
@@ -58,6 +59,8 @@ public class Salary {
     System.out.println("Amount of your raise: " + money.format(raise));
     
     System.out.println("Your new salary: " + money.format(newSalary));
+
+    scan.close();
 
 }
 
