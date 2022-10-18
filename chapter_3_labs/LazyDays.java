@@ -13,7 +13,7 @@ public class LazyDays {
     Scanner scan = new Scanner(System.in);
     
     System.out.println("Hi, please input an INTEGER temperature in Farienheit"
-                         + "so we can help you choose what to do today");
+                         + " so we can help you choose what to do today");
     temp = scan.nextInt();
     if ((temp > 95) || (temp < 20))
       activity = "let's go visit our shops!";

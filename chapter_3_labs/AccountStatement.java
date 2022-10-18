@@ -15,7 +15,7 @@ public class AccountStatement {
     double prev_bal, add_charges, interest, min_payment, new_bal;
     
     System.out.println("      Balance Sheet\n\nPlease input the previous balance for the month "
-                      + "example: if you owed $30, then enter \'30\'");
+                      + "(ex. if you owed $30, then enter \'30\')");
     prev_bal = scan.nextDouble();
     
     System.out.println("Thanks, now input the amount of additional charges for the month");
