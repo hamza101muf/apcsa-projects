@@ -14,8 +14,6 @@ public class Factorial {
 
         System.out.println("Hi, please input an INTEGER so we can calculate the factorial of that number");
         num = scan.nextInt();
-        
-        int num1 = num;
         while (num < 0)
         {
             System.out.println("Please input a non-negative integer");
@@ -26,7 +24,7 @@ public class Factorial {
             num--;
         }
         
-        System.out.println("The factorial of " + num1 + " is " + factorial);
+        System.out.println("The factorial of your number is " + factorial);
         scan.close();
     }
 }
