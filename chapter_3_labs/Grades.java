@@ -9,10 +9,7 @@ public class Grades {
     // ---------------------------------------------------------------
     // Reads in & processes grades until a negative # is entered.
     // ---------------------------------------------------------------
-    public static void main(String[] args)
-
-    {
-
+    public static void main(String[] args) {
         double grade; // a student's grade
         double sumOfGrades; // a running total of student grades
         int numStudents; // a count of the students

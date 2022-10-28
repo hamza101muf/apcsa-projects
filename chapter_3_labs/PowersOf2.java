@@ -16,7 +16,7 @@ public class PowersOf2 {
         int exponent = 0; // Exponent for current power of 2, this also serves as a counter for the loop
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("How many powers of 2 do you want?");
+        System.out.print("How many powers of 2 do you want (up to 30): ");
 
         numPowersOf2 = scan.nextInt();
 

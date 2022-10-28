@@ -41,13 +41,19 @@ public class Temps {
             }
         }
 
-        if (timeOfMax <=9){
+        if ((timeOfMax <=9)&&(timeOfMin <=9)) {
             System.out.println("The maximum temperature is " + maxTemp + " which occured at 0" + timeOfMax + "00 hours");
-        }
-        if (timeOfMin <=9){
             System.out.println("The minimum temperature is " + minTemp + " which occured at 0" + timeOfMin + "00 hours");
         }
-        if (timeOfMax >9){
+        else if (timeOfMin <=9){
+            System.out.println("The maximum temperature is " + maxTemp + " which occured at " + timeOfMax + "00 hours");
+            System.out.println("The minimum temperature is " + minTemp + " which occured at 0" + timeOfMin + "00 hours");
+        }
+        else if (timeOfMax <=9){
+            System.out.println("The maximum temperature is " + maxTemp + " which occured at 0" + timeOfMax + "00 hours");
+            System.out.println("The minimum temperature is " + minTemp + " which occured at " + timeOfMin + "00 hours");
+        }
+        else {  
             System.out.println("The maximum temperature is " + maxTemp + " which occured at " + timeOfMax + "00 hours");
             System.out.println("The minimum temperature is " + minTemp + " which occured at " + timeOfMin + "00 hours");
         }

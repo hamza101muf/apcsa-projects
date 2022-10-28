@@ -15,7 +15,7 @@ public class LoveCS {
     int sum = 0;
 
     Scanner scan = new Scanner(System.in);
-    System.out.println("Hi, please input the number of times you would like the statement to print ");
+    System.out.print("Hi, please input the number of times you would like the statement to print: ");
 
     limit = scan.nextInt();
 
@@ -24,7 +24,8 @@ public class LoveCS {
       count++;
       sum += count;
     }
-    System.out.println("Printed this message " + count + " times." + " The sum of the numbers is " + sum + ".");
+    System.out.println("Printed this message " + count + " times." + " The sum of the numbers " 
+    + "1 to " + (count) +" is " + sum + ".");
 
     scan.close();
   }
