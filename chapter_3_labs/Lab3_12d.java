@@ -1,0 +1,28 @@
+/*
+ * Hamza Mufti
+ * Lab 3.12d - stars program in certain arrangement
+ */
+
+public class Lab3_12d {
+  public static void main(String[] args) {
+    
+    for(int i = 1; i<=5; i++) {
+            // Print space in decreasing order 
+            for (int j=5; j>i; j--)
+                System.out.print(" ");
+            for (int k=1; k<=(i * 2) -1; k++)
+                System.out.print("*");
+            System.out.println();
+      
+    }
+    for (int p = 5; p>=1; p--) {
+            for (int j=5; j>p; j--)
+                System.out.print(" ");
+            for (int k=1; k<=(p * 2) -1; k++)
+                System.out.print("*");
+            System.out.println();
+    }
+    
+  }
+}
+    

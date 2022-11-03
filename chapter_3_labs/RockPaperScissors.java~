@@ -1,0 +1,71 @@
+/*
+ * Hamza Mufti
+ * 11/2/22
+ * Rock Paper Scissors Game - computer plays rock paper scissors and plays against the user
+ */
+
+import java.util.Scanner;
+
+public class RockPaperScissors {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+    boolean keepGoing = true;
+    
+    // loop that keeps replaying until user quits    
+    while(keepGoing) {
+      System.out.println("Let's PLAY rock, paper, scissors! \n Here's how to play:\n\t choose 'r' for ROCK" + 
+    "\n\t choose 'p' for PAPER \n\t choose 's' for SCISSORS");
+      
+      //user choice of weapon
+      System.out.print("Now choose your weapon: ");
+      char choice = scan.nextChar();
+      int draw = 0, wins = 0, loss = 0;
+      
+      //checks if matches valid input
+      while((choice!='r')||(choice!='p')||(choice!='s')) {
+         System.out.print("You didn't choose one of the given options, please input one of the given options: ");
+         choice = scan.nextChar();
+      }
+      //matches input to weapon
+      if (choice == 'r')
+        System.out.print("You have chosen a ROCK.");
+      else if (choice == 'p')
+        System.out.print("You have chosen PAPER");
+      else
+        System.out.print("You have chosen SCISSORS");
+      
+      int computerChoice = (int)(Math.Random()*3)+1;
+      char computer;
+      if (computerChoice == 1){
+        System.out.println("Computer has chosen ROCK");
+        computer = 'r';
+      }
+      else if (computerChoice == 2){
+        System.out.println("Computer has chosen PAPER");
+        computer = 'p';
+      }
+      else {
+        System.out.println("Computer has chosen SCISSORS");
+        computer = 's';        
+      }
+      
+      if (choice == computer)
+        System.out.println("You and the computer DRAW");
+        draw++;
+      else if ((choice=='r')&&(computer=='s'))
+        System.out.println("YOU WIN!");
+        wins++;
+    }
+        
+        
+      
+    
+    
+    
+    
+    
+    
+    
+  }
+}

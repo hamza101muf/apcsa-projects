@@ -1,0 +1,71 @@
+
+/*
+ * Hamza Mufti
+ * Lab3_12 - uses all the programs (a-d) and allows user to pick which one)
+ */
+import java.util.Scanner;
+
+public class Lab3_12 {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int quit = 1;
+
+    while (quit != 0) {
+      System.out.print("Which of the star patterns would you like to print out? \n (\'a\' = a)");
+      String choice = scan.next();
+      if (choice.equalsIgnoreCase("a")) {
+        for (int i = 10; i >= 1; i--) {
+          for (int j = i; j >= 1; j--)
+            System.out.print("*");
+          System.out.println();
+        }
+        System.out.println("Would you like to do this again (0 - to quit)");
+        quit = scan.nextInt();
+      } else if (choice.equalsIgnoreCase("b")) {
+        for (int i = 10; i >= 1; i--) {
+          for (int j = i; j >= 1; j--)
+            System.out.print(" ");
+          for (int j = i; j <= 10; j++)
+            System.out.print("*");
+          System.out.println();
+        }
+        System.out.println("Would you like to do this again (0 - to quit)");
+        quit = scan.nextInt();
+      } else if (choice.equalsIgnoreCase("c")) {
+        for (int i = 1; i <= 10; i++) {
+          for (int j = i; j >= 1; j--)
+            System.out.print(" ");
+          for (int j = i; j <= 10; j++)
+            System.out.print("*");
+          System.out.println();
+
+        }
+        System.out.println("Would you like to do this again (0 - to quit)");
+        quit = scan.nextInt();
+      } else if (choice.equalsIgnoreCase("d")) {
+        for (int i = 1; i <= 5; i++) {
+          for (int j = 5; j > i; j--)
+            System.out.print(" ");
+          for (int k = 1; k <= (i * 2) - 1; k++)
+            System.out.print("*");
+          System.out.println();
+
+        }
+        for (int p = 5; p >= 1; p--) {
+          for (int j = 5; j > p; j--)
+            System.out.print(" ");
+          for (int k = 1; k <= (p * 2) - 1; k++)
+            System.out.print("*");
+          System.out.println();
+        }
+        System.out.println("Would you like to do this again (0 - to quit)");
+        quit = scan.nextInt();
+      } else {
+        System.out.println("Hey you didn't input a value \'a\' - \'d\' - try again");
+        choice = scan.next();
+      }
+
+    }
+    scan.close();
+  }
+}

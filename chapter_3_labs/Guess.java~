@@ -43,7 +43,7 @@ public class Guess {
             System.out.println("\nYou guessed high " + high_guess + " times and low " + low_guess + " times.");
             System.out.println("\nYou guessed a total of " + (high_guess + low_guess) + " times.\n");
 
-            System.out.println("Would you like to play again? (-1 to quit)");
+            System.out.println("Would you like to play again? (-1 to quit, any other integer means yes)");
             play_again = scan.nextInt();
 
         }
