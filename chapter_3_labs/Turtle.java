@@ -64,13 +64,23 @@ public class Turtle extends SimpleTurtle
   {
     World earth = new World();
     Turtle hamza = new Turtle(earth);
-    for (int i = 0, p=10000; i<(p+2);i++,p--)
-      if (i%4==0)
-       hamza.forward(i/2+1);
-    else{
-        hamza.turn(45);
-        hamza.forward(p/i);
-    }
+    hamza.penUp();
+    hamza.turnLeft();
+    hamza.forward(200);
+    hamza.turnRight();
+    hamza.penDown();
+    
+    hamza.forward(250);
+    hamza.backward(175);
+    
+    
+//    for (int i = 0, p=10000; i<(p+2);i++,p--)
+//      if (i%4==0)
+//       hamza.forward(i/2+1);
+//    else{
+//        hamza.turn(45);
+//        hamza.forward(p/i);
+    //}
   }
 
 } // this } is the end of class Turtle, put all new methods before this
