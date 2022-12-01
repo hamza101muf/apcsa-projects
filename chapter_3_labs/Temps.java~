@@ -17,7 +17,7 @@ public class Temps {
     // ----------------------------------------------------
     public static void main(String[] args) {
 
-        final int HOURS_PER_DAY = 4;
+        final int HOURS_PER_DAY = 24;
         int maxTemp, minTemp, timeOfMax=0, timeOfMin=0, temp = 0; // a temperature reading
         maxTemp = Integer.MIN_VALUE;
         minTemp = Integer.MAX_VALUE;
@@ -25,7 +25,7 @@ public class Temps {
         // print program heading
 
         System.out.println();
-        System.out.println("Temperature Readings for a "+HOURS_PER_DAY + " Hour" + " Period");
+        System.out.println("Temperature Readings for 24 Hour" + " Period");
         System.out.println();
 
         for (int hour = 0; hour < HOURS_PER_DAY; hour++) {
