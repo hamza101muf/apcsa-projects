@@ -13,7 +13,7 @@ public class Code {
         for (int i = p1; i <= p2; i++) {
             part1 = part1.substring(0, i) + "*";
             if (part1.length()!=myCode.length()) {
-                part1 = part1 + myCode.substring(i+1);
+                part1 += myCode.substring(i+1);
             }   
 
         }
