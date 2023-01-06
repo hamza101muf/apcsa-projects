@@ -12,9 +12,9 @@ public class Boosters {
         BandBooster booster1 = new BandBooster("Donald");
         BandBooster booster2 = new BandBooster("Duck");
         for (int i=1; i<=3;i++){
-            System.out.println("Enter the number of boxes sold by "+booster1.getName()+" during week "+i+": ");
+            System.out.print("Enter the number of boxes sold by "+booster1.getName()+" during week "+i+": ");
             booster1.updateSales(scan.nextInt());
-            System.out.println("Enter the number of boxes sold by "+booster2.getName()+" during week "+i+": ");
+            System.out.print("Enter the number of boxes sold by "+booster2.getName()+" during week "+i+": ");
             booster2.updateSales(scan.nextInt());
         }
         System.out.println(booster1);

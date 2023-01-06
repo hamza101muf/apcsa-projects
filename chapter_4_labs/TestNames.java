@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class TestNames {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please input the first name: ");
+        System.out.println("Please input the first full name: ");
         Name name1 = new Name(scan.next(), scan.next(), scan.next());
-        System.out.println("Please input the second name: ");
+        System.out.println("Please input the second full name: ");
         Name name2 = new Name(scan.next(), scan.next(), scan.next());
 
         System.out.println(name1.getFirstMiddleLast());
