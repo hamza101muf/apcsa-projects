@@ -29,6 +29,6 @@ public class Shopping {
       cont = scan.next();
     }
     System.out.println("Please pay: " + fmt.format(cart.getTotalPrice()));
-    
+    scan.close();
   }
 }
