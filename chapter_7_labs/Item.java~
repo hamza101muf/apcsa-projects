@@ -1,0 +1,30 @@
+/* 
+ * Hamza Mufti
+ * 1/19/23
+ * Shopping cart Array lab - item class file
+ */
+public class Item {
+ private String itmName;
+ private double price;
+ private int quantity;
+ 
+ public Item(String itm, double prc, int qn) {
+   itmName = itm;
+   price = prc;
+   quantity = qn;
+ }
+ 
+ public String getItemName() {
+   return itmName;
+ }
+ public double getPrice() {
+   return price;
+ }
+ public int getQuantity() {
+   return quantity;
+ }
+ 
+ public String toString() {
+   return("Name: " + itmName + " Price: " + price + " Quantity: " + quantity);
+ }
+}
