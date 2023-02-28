@@ -5,7 +5,7 @@ public class Test {
         ArrayList<Integer> list = new ArrayList<Integer>();
         list.add(1);
         list.add(2);
-        list.add(2,4);
+        list.add(3,4);
         list.set(2,3);
 
 

@@ -39,10 +39,10 @@ public class JaggedArray {
         total += pitchArray[r][c];
         
       }
-      report = "Pitcher #"+(r+1)+" pitched : "+
-                           count+" games. Their Largest Pitch was "
-        +maxPitch+" Their Smallest Pitch was "+minPitch
-                             +" Pitch Total: "+total
+      report = "Pitcher #"+(r+1)+" pitched "+
+                           count+" games. Their largest pitch was: "
+        +maxPitch+". Their smallest pitch was: "+minPitch
+                             +". Pitch Total: "+total
                            +" Average Pitch: "+ fmt.format(total/(double)count);
       reports[r]=report;
       System.out.println(report);
@@ -54,7 +54,9 @@ public class JaggedArray {
       System.out.print(report+"\n Would you like to continue (-1 to quit, any other number for yes");
       more = scan.nextInt();
       
-    }    
+    }  
+    
+    scan.close();
   }
 }
         
